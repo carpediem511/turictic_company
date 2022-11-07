@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @import url(/fonts/style.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.shadow {
+  box-shadow: 0px 4px 35px #231A13;
+}
+
+.border-strong {
+  border-radius: 0 0 10000px 10000px / 0 0 2520px 2520px;
+}

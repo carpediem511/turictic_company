@@ -1,9 +1,8 @@
 @font-face {
-    font-family: 'Cocotte';
-    src: local('Cocotte Regular'), local('Cocotte-Regular'),
-        url('Cocotte.woff2') format('woff2'),
-        url('Cocotte.woff') format('woff'),
-        url('Cocotte.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Cocotte";
+  src: local("Cocotte Regular"), local("Cocotte-Regular"),
+    url("Cocotte.woff2") format("woff2"), url("Cocotte.woff") format("woff"),
+    url("Cocotte.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,9 +1,15 @@
 module.exports = {
-  content: [
-    "./src/**/*.{html,js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        accent: "Cocotte, sans-serif",
+        main: "Roboto, sans-serif",
+      },
+      colors:{
+        yellow: "#FFC700",
+      },
+    },
   },
   plugins: [],
 }
