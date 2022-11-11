@@ -6,7 +6,7 @@ module.exports = {
         accent: "Cocotte, sans-serif",
         main: "Roboto, sans-serif",
       },
-      colors:{
+      colors: {
         yellow: "#FFC700",
       },
     },
