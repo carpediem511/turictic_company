@@ -118,6 +118,10 @@ span {
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .tour-other {
@@ -135,6 +139,10 @@ span {
   @media (max-width: 1024px) {
     font-size: 14px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .review {
@@ -150,6 +158,8 @@ span {
   @media (max-width: 1024px) {
     width: 60%;
   }
+
+
 }
 
 .background-reviews {
