@@ -60,3 +60,23 @@
                         },
 ]
 */
+
+let isOpen = false
+const menuButton = document.getElementById("openMenuButton")
+menuButton.addEventListener("click", openMenu)
+
+function openMenu() {
+  const openMenuContent = document.getElementById("openMenu")
+
+  let changeImg = document.getElementById("menuCloseImg")
+
+  if (isOpen) {
+    openMenuContent.style.display = "none"
+    changeImg.src = "/src/images/icon-menu.png"
+    isOpen = false
+  } else {
+    openMenuContent.style.display = "flex"
+    changeImg.src = "./src/images/icon-menu2.png"
+    isOpen = true
+  }
+}
