@@ -11,13 +11,10 @@ module.exports = {
       },
       screens: {
 
-        "laptope-M": { max: "1280px" },
-        "laptope-S": { max: "1024px" },
+        "laptope": { max: "1024px" },
         "tablet": { max: "768px" },
-        "mobile-L": { max: "600px" },
-        "mobile-M": { max: "425px" },
-        "mobile-S": { max: "375px" },
-        "mobile-XS": { max: "320px" },
+        "mobile": { max: "375px" },
+    
       },
       fontSize: {
         mini: ["10px", "1.2"],
