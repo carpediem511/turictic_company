@@ -10,15 +10,25 @@ module.exports = {
         yellow: "#FFC700",
       },
       screens: {
+        'mini': '375px',
 
-        "laptope": { max: "1024px" },
-        "tablet": { max: "768px" },
-        "mobile": { max: "375px" },
-    
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
       },
       fontSize: {
-        mini: ["10px", "1.2"],
-        min: ["7px", "0.8"],
+        min: ["8px", "1.1"],
       },
     },
   },

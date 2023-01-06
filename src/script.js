@@ -61,22 +61,33 @@
 ]
 */
 
+
 let isOpen = false
-const menuButton = document.getElementById("openMenuButton")
-menuButton.addEventListener("click", openMenu)
 
-function openMenu() {
-  const openMenuContent = document.getElementById("openMenu")
 
-  let changeImg = document.getElementById("menuCloseImg")
 
-  if (isOpen) {
-    openMenuContent.style.display = "none"
-    changeImg.src = "/src/images/icon-menu.png"
-    isOpen = false
-  } else {
-    openMenuContent.style.display = "flex"
-    changeImg.src = "./src/images/icon-menu2.png"
-    isOpen = true
-  }
+
+   let menuImg = document.getElementById("iconMenu")
+   let openMobileMenu = document.getElementById("mobileMenu")
+   let buttonOpenMenu = document.getElementById("openMenuButton")
+
+   buttonOpenMenu.addEventListener("click", openMenu)
+
+   function openMenu() {
+ 
+   if (buttonOpenMenu) { // если у нас нажали на элемент 
+		if (isOpen) { // если он уже был открыт, значит, нажали еще раз - закрываем
+			// поменять иконку
+      openMobileMenu.style.display = "none"
+            menuImg.src = "./src/images/icon-menu.png"
+			isOpen = false // установить закрытым
+   
+		} else {
+			// поменять иконку	
+      openMobileMenu.style.display = "flex"
+         menuImg.src = "./src/images/icon-menu2.png"
+			isOpen = true // установить открытым
+        
+		}
+ 	}
 }
