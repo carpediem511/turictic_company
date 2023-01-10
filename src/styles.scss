@@ -64,47 +64,47 @@ span {
   box-shadow: 3px 3px 3px rgb(68, 69, 68);
   border-radius: 24px;
   background-size: cover;
-
   border-radius: 1.5rem;
+
+  @media (max-width: 639px) {
+    width: 50%;
+  }
 }
 
 .background-place1 {
   grid-area: 1 / 1 / 3 / 2;
-
   background-image: url(images/image-baho.png);
-
-  @media (max-width: 600px) {
-  }
 }
 
 .background-place2 {
   grid-area: 1 / 2 / 2 / 3;
-
   background-image: url(images/image-beech.jpg);
 }
 
 .background-place3 {
   grid-area: 1 / 3 / 2 / 4;
-
   background-image: url(images/image-dalat.jpg);
 }
 
 .background-place4 {
   grid-area: 2 / 2 / 3 / 4;
-
   background-image: url(images/image-vinperl.jpg);
 }
 
 .background-place5 {
   grid-area: 3 / 1 / 6 / 3;
-
   background-image: url(images/image-hotel.png);
 }
 
 .background-place6 {
   grid-area: 3 / 3 / 6 / 4;
-
   background-image: url(images/image-food.png);
+}
+
+.place-mini {
+  @media (max-width: 640px) {
+    align-items: center;
+  }
 }
 
 .tour-name {
@@ -130,7 +130,6 @@ span {
 .tour-other {
   font-size: 16px;
   color: #ffffff;
-
   background: linear-gradient(
     89.81deg,
     #1e1e1e73 0.12%,
@@ -165,8 +164,6 @@ span {
   @media (max-width: 768px) {
     width: 80%;
   }
-
-
 }
 
 .background-reviews {

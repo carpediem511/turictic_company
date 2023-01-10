@@ -10,31 +10,26 @@
 
   <body>
     <div class="w-full relative z-50">
-
       <img src="/src/images/main1.png" class="bg-cover w-full gradient-1" />
 
       <div class="absolute top-0 left-0 bottom-0 right-0 gradient-1">
-
-         <div id="header-mobile" class="mini:flex justify-between">
-        
-          <button id="openMenuButton"  class="hidden mini:flex w-8 ml-10 mt-2.5">
-            <img src="/src/images/icon-menu.png"  id="iconMenu"/>
+        <div id="header-mobile" class="flex justify-between sm:hidden">
+          <button id="openMenuButton" class="flex w-8 ml-10 mt-2.5 sm:hidden">
+            <img src="/src/images/icon-menu.png" id="iconMenu"/>
           </button>
-    
-        <div class="mini:flex float-right mr-10 mt-6 mini:mt-3.5">
 
-          <img src="/src/images/icon-email.png" class="hidden mini:flex w-6 h-6 mr-2.5" />
-          <img src="/src/images/icon-telegram.png" class="hidden mini:flex w-6 h-6" />
+          <div class="flex float-right mr-10 mt-3 sm:hidden mini:mt-6">
+            <img src="/src/images/icon-email.png" class="flex w-6 h-6 mr-2.5 sm:hidden"/>
+            <img src="/src/images/icon-telegram.png" class="flex w-6 h-6 sm:hidden"/>
+          </div>
         </div>
-        </div> 
 
-        <div class="flex justify-around text-lime-700 font-normal font-accent py-5 text-lg mini:hidden">
-
+        <div class="hidden sm:flex justify-around text-lime-700 font-normal font-accent py-5 text-lg">
           <header>
-            <div id="mobileMenu" class="flex items-center max-w-6xl">
-              <div class="text-xl font-medium" >#волшебныйВьетнам</div>
+            <div id="mobileMenu" class="hidden sm:flex items-center max-w-6xl">
+              <div class="text-xl font-medium">#волшебныйВьетнам</div>
 
-              <div class="flex text-lime-700 font-light font-main pt-1 lg:text-lg md:text-base sm:text-sm mini:text-xs">
+              <div class="flex text-lime-700 font-light font-main pt-1 lg:text-lg sm:text-base sm:text-sm">
                 <div class="mx-10 font-medium lg:mx-8 md:mx-6 sm:mx-3">О НАС</div>
                 <div class="mx-10 font-medium lg:mx-8 md:mx-6 sm:mx-3">ЭКСКУРСИИ</div>
                 <div class="mx-10 font-medium lg:mx-8 md:mx-6 sm:mx-3">ОТЗЫВЫ</div>
@@ -42,60 +37,65 @@
               </div>
 
               <div class="flex">
-                <img src="/src/images/icon-email.png" class="w-8 mx-5" />
-                <img src="/src/images/icon-telegram.png" class="w-8" />
+                <img src="/src/images/icon-email.png" class="w-8 mx-5"/>
+                <img src="/src/images/icon-telegram.png" class="w-8"/>
               </div>
             </div>
           </header>
         </div>
 
-        <div class="flex justify-evenly mx-auto mb-0 text-center mt-40 lg:mt-24 md:mt-8 sm:mt-3 mini:mt-7">
-          <div class="w-24 relative mt-80 lg:mt-48 md:mt-36 sm:mt-20 mini:mt-7">
-            <img src="/src/images/icon-left.png" class="w-16 ml-11 md:w-10 sm:w-10 mini:w-6"/>
+        <div class="flex justify-evenly mx-auto mb-0 mt-2 text-center xl:mt-40 lg:mt-24 sm:mt-3 mini:mt-8">
+          <div class="relative mt-10 xl:w-24 mt-80 lg:mt-48 md:mt-36 sm:mt-20">
+            <img src="/src/images/icon-left.png" class="w-8 xl:w-16 md:w-10 sm:w-10"/>
           </div>
 
           <div>
-            <h1 class="text-6xl font-accent text-white lg:text-5xl md:text-4xl sm:text-3xl mini:text-xl">НЕЗАБЫВАЕМЫЙ</h1>
-            <h2 class="text-9xl font-accent text-white lg:text-8xl md:text-7xl sm:text-6xl mini:text-4xl">ВЬЕТНАМ</h2>
+            <h1 class="text-lg font-accent text-white lg:text-5xl md:text-4xl sm:text-3xl mini:text-2xl">
+              НЕЗАБЫВАЕМЫЙ
+            </h1>
+            <h2 class="text-3xl font-accent text-white lg:text-8xl md:text-7xl sm:text-6xl mini:text-5xl">
+              ВЬЕТНАМ
+            </h2>
 
-            <p class="text-3xl text-white font-normal mt-20 mb-20 xl:mt-16 lg:mt-12 md:mt-8 text-2xl mb-10 sm:text-xl mb-8 mt-6 mini:text-sm mb-2.5 mt-1">
+            <p class="mb-1 text-white font-normal mt-0.5 text-min xl:mt-16 lg:mt-12 md:text-2xl mt-12 mb-2 sm:text-xl -mb-8 mt-6 mini:mt-1 text-sm">
               Выберите тур прямо сейчас
             </p>
 
-            <button class="font-bold text-3xl border-lime-600 border-solid bg-yellow px-20 py-8 rounded-full shadow xl:px-16 py-6 lg:px-14 text-2xl md:text-xl px-12 py-4 sm:text-lg px-10 py-3 mini:text-sm px-4 py-2" >
+            <button class="text-min px-4 py-1 mt-0.5 font-bold border-lime-600 border-solid bg-yellow rounded-full shadow xl:text-3xl px-16 py-6 lg:px-14 text-2xl mt-24 md:text-xl px-12 py-4 sm:text-lg px-10 py-3 mini:text-sm px-8 py-4">
               ВЫБРАТЬ ТУР
             </button>
           </div>
-          <div class="w-24 relative mt-80 lg:mt-48 md:mt-36 sm:mt-20 mini:mt-8">
-            <img src="/src/images/icon-right.png" class="w-16 md:w-10 sm:w-10 mini:w-6"/>
+
+          <div class="relative mt-10 xl:w-24 mt-80 lg:mt-48 md:mt-36 sm:mt-20">
+            <img src="/src/images/icon-right.png" class="w-8 xl:w-16 md:w-10 sm:w-10"/>
           </div>
         </div>
       </div>
     </div>
 
     <div class="w-full">
-
-      <div class="relative z-10 ">
+      <div class="relative z-10">
         <img src="/src/images/image-section2.jpg" class="bg-cover w-full -mt-60 lg:-mt-32 md:-mt-12 sm:-mt-6 mini:-mt-2.5"/>
-      
+
         <div class="absolute top-0 left-0 bottom-0 right-0 gradient-2">
-
           <div class="mx-auto max-w-screen-lg pt-80 xl:pt-60 lg:pt-40 md:pt-24 sm:pt-14 mini:pt-8">
+            <h2 class="font-accent text-xl text-center xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl">
+              Кто мы?
+            </h2>
 
-            <h2 class="font-accent text-6xl text-center xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl mini:text-xl">Кто мы?</h2>
+            <div class="flex inline justify-around mt-0 mx-auto lg:mt-12 mini:mt-4">
+              <img src="/src/images/image-we.jpg" class="w-6/12 mt-10 -ml-6 border border-foto h-4/5 z-10 xl:mt-8 lg:w-5/12 ml-6 mt-4 md:w-5/12 -ml-4 -mt-1 mini:-ml-7"/>
 
-            <div class="flex inline justify-around  mt-4 mx-auto lg:-mt-2">
-      
-              <img src="/src/images/image-we.jpg" class="w-6/12 mt-10 -ml-6 border border-foto h-4/5 z-10 xl:mt-8 lg:w-5/12 ml-6 mt-4 md:w-4/12 -ml-4 -mt-1 mini:-ml-7" />
-
-              <div class="w-8/12 bg-slate-50 border -ml-24 text-xl px-14 py-10 font-normal border-foto z-50 mt-36 xl:mt-24 lg:w-6/12 text-base px-10 py-8 mt-20 -ml-36 md:w-6/12 px-6 mt-2 -ml-48 py-3 text-sm sm:text-xs py-3.5 w-5/12 mt-1.5 mini:w-6/12 text-min ml-6 mt-24">
-                <p> <span> <strong> Мы - Мальвина и Сергей занимаемся туристическими поездками уже более 10
-                                                лет. Мы обожаем путешествия! </strong> </span> За нашими плечами более десяти стран:
-                                                Турция, Египет, Испания, Куба... и множество поездок по России: Эльбрус, Домбай, Архыз, Мурманск... 
-                                                <strong>Все маршруты всегда организовываем сами, ведь так гораздо интереснее!
-                                                </strong> <br> <br> На данный момент живём во Вьетнаме и <span>предлагаем Вам 
-                                                сделать ваш отдых ярким и незабываемым, </span> увезти с собой чемодан эмоций и впечатлений, которые будут
-                                                согревать до следующего путешествия! </p> 
+              <div class="w-5/12 text-xs ml-6 mt-24 px-6 py-4 bg-slate-50 border font-normal border-foto z-50 xl:mt-24 lg:text-base w-6/12 mt-20 -ml-36 md:text-sm w-7/12 px-8 py-6 mt-2 -ml-36 sm:text-xs py-3.5 w-5/12 mt-1.5">
+                <p> <span> <strong> Мы - Мальвина и Сергей занимаемся туристическими поездками уже более 10 лет. Мы обожаем путешествия!</strong>
+                  </span> За нашими плечами более десяти стран: Турция, Египет, Испания,
+                          Куба... и множество поездок по России: Эльбрус, Домбай, Архыз, Мурманск...
+                  <strong>Все маршруты всегда организовываем сами, ведь так гораздо интереснее!</strong> <br/> <br/>
+                          На данный момент живём во Вьетнаме и
+                  <span>предлагаем Вам сделать ваш отдых ярким и незабываемым,</span>
+                        увезти с собой чемодан эмоций и впечатлений, которые будут
+                        согревать до следующего путешествия!
+                </p>
               </div>
             </div>
           </div>
@@ -104,214 +104,222 @@
     </div>
 
     <div class="w-full">
-
       <div class="bg-slate-100 gradient-3 pb-24 mini:pb-10">
-
         <div class="mx-auto max-w-screen-lg pt-80 sm:pt-56">
+          <h3 class="font-accent text-6xl text-center -mt-48 mb-12 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl mini:text-xl">
+            Куда отправиться?
+          </h3>
 
-          <h3 class="font-accent text-6xl text-center -mt-48 mb-12 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl mini:text-xl">Куда отправиться? </h3>
-
-          <div class="grid grid-cols-3 grid-rows-3 gap-4 lg:mx-12 md:mx-16 sm:mx-20 mini:flex flex-wrap flex-col mx-6">
-            <div class="places background-place1 max-h-44">  
-
+          <div class="flex grid-cols-3 grid-rows-3 gap-4 place-mini lg:mx-12 md:mx-16 sm:mx-20 md:grid flex-wrap flex-col mx-6">
+            <div class="places background-place1 max-h-44 md:max-h-max">
               <div class="flex justify-between">
-                <div class="tour-name font-main font-medium">ВОДОПАДЫ БАХО</div>         
-                <div><img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5" ></div>
+                <div class="tour-name font-main font-medium">ВОДОПАДЫ БАХО</div>
+                <div>
+                  <img src="/src/images/icon-like.png" class="mr-2.5 w-7 w-6 mt-5"/>
+                </div>
               </div>
 
-              <div class="tour-other mt-56 mb-2 mini:mt-16">
-                <div>Стоимость </div>
+              <div class="tour-other mt-16 sm:mt-16 mb-2 max-h-44 md:mt-72">
+                <div>Стоимость</div>
                 <div>Продолжительность</div>
 
                 <div class="flex justify-between">
                   <div>День проведения</div>
-                  <div><img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5" ></div>
+                  <div>
+                    <img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5"/>
+                  </div>
                 </div>
               </div>
             </div>
 
-          <div class=" places background-place2">
+            <div class="places background-place2">
+              <div class="flex justify-between">
+                <div class="tour-name font-main font-medium">ПЛЯЖ ДОКЛЕТ</div>
+                <div>
+                  <img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5"/>
+                </div>
+              </div>
 
-            <div class="flex justify-between ">
-              <div  class="tour-name font-main font-medium">ПЛЯЖ ДОКЛЕТ</div>         
-              <div><img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5" ></div>
+              <div class="tour-other mt-10 md:mt-20 mb-2">
+                <div>Стоимость</div>
+                <div>Продолжительность</div>
+
+                <div class="flex justify-between">
+                  <div>День проведения</div>
+                  <div>
+                    <img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5"/>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="tour-other mt-8 mb-2 sm:mt-10">
-              <div>Стоимость </div>
-              <div>Продолжительность</div>
-
+            <div class="places background-place3">
               <div class="flex justify-between">
-                <div>День проведения</div>
-                <div><img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5" ></div>
+                <div class="tour-name font-main font-medium">ДАЛАТ</div>
+                <div>
+                  <img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5"/>
+                </div>
+              </div>
+
+              <div class="tour-other mt-10 md:mt-20 mb-2">
+                <div>Стоимость</div>
+                <div>Продолжительность</div>
+
+                <div class="flex justify-between">
+                  <div>День проведения</div>
+                  <div>
+                    <img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="places background-place4">
+              <div class="flex justify-between">
+                <div class="tour-name font-main font-medium">ВИНПЁРЛ</div>
+                <div>
+                  <img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5"/>
+                </div>
+              </div>
+
+              <div class="tour-other mt-10 md:mt-20 mb-2">
+                <div>Стоимость</div>
+                <div>Продолжительность</div>
+
+                <div class="flex justify-between">
+                  <div>День проведения</div>
+                  <div>
+                    <img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="places background-place5">
+              <div class="flex justify-between">
+                <div class="tour-name font-main font-medium">"CRAZY HOUSE"</div>
+                <div>
+                  <img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5"/>
+                </div>
+              </div>
+
+              <div class="tour-other mt-10 md:mt-28 mb-2">
+                <div>Стоимость</div>
+                <div>Продолжительность</div>
+
+                <div class="flex justify-between">
+                  <div>День проведения</div>
+                  <div>
+                    <img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="places background-place6">
+              <div class="flex justify-between">
+                <div class="tour-name font-main font-medium">TRIP FOOD</div>
+                <div>
+                  <img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5"/>
+                </div>
+              </div>
+
+              <div class="tour-other mt-10 md:mt-28 mb-2">
+                <div>Стоимость</div>
+                <div>Продолжительность</div>
+
+                <div class="flex justify-between">
+                  <div>День проведения</div>
+                  <div>
+                    <img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="places background-place3">
-
-            <div class="flex justify-between ">
-              <div class="tour-name font-main font-medium">ДАЛАТ</div>         
-              <div><img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5" ></div>
-            </div>
-
-            <div class="tour-other mt-8 mb-2 sm:mt-14">
-              <div>Стоимость </div>
-              <div>Продолжительность</div>
-  
-              <div class="flex justify-between">
-                <div>День проведения</div>
-                <div><img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5" ></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="places background-place4"> 
-
-            <div class="flex justify-between ">
-              <div class="tour-name font-main font-medium">ВИНПЁРЛ</div>         
-              <div><img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5" ></div>
-            </div>
-
-            <div class="tour-other mt-8 mb-2 sm:mt-14">
-              <div>Стоимость </div>
-              <div>Продолжительность</div>
-  
-              <div class="flex justify-between">
-                <div>День проведения</div>
-                <div><img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5" ></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="places background-place5">
-
-            <div class="flex justify-between ">
-              <div class="tour-name font-main font-medium">"CRAZY HOUSE"</div>         
-              <div><img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5" ></div>
-            </div>
-
-            <div class="tour-other mt-14 mb-2 sm:mt-20">
-              <div>Стоимость </div>
-              <div>Продолжительность</div>
-  
-              <div class="flex justify-between">
-                <div>День проведения</div>
-                <div><img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5" ></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="places background-place6">
-
-            <div class="flex justify-between ">
-              <div class="tour-name font-main font-medium">TRIP FOOD</div>         
-              <div><img src="/src/images/icon-like.png" class="mt-7 mr-2.5 w-7 mini:w-6 mt-5" ></div>
-            </div>
-
-            <div class="tour-other mt-14 mb-2 sm:mt-20">
-              <div>Стоимость </div>
-              <div>Продолжительность</div>
-
-              <div class="flex justify-between">
-                <div>День проведения</div>
-                <div><img src="/src/images/icon-right2.png" class="mt-1 mr-2.5 w-12 sm:w-6 mini:mt-0.5 w-5" ></div>
-              </div>
-            </div>
-  
-          </div>
-    </div>
-
-    </div>
-
-    </div>
+        </div>
+      </div>
     </div>
 
     <div class="background-reviews">
-    <div class="mx-auto max-w-screen-md">
-      <h4 class="font-accent text-6xl text-center mt-10 mb-16 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl sm:mt-2.5 mb-6 mini:text-xl">Что о нас говорят?</h4>
-      <div>
+      <div class="mx-auto max-w-screen-md">
+        <h4 class="font-accent text-6xl text-center mt-10 mb-16 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl sm:mt-2.5 mb-6 mini:text-xl">
+          Что о нас говорят?
+        </h4>
+        <div>
+          <div class="review bg-slate-50">
+            <div class="w-3/12">
+              <img src="/src/images/image-girl1.png" class="w-full rounded-full"/>
+            </div>
 
-        <div class="review bg-slate-50">
-          <div class="w-3/12">
-          <img src="/src/images/image-girl1.png" class="w-full rounded-full"/> 
+            <div class="w-8/12">
+              <div class="text-sm font-bold pl-2.5 text-lime-700 font-light sm:text-lg">Алиса Аммерман</div>
+              <div class="text-xs pl-2.5 pt-2.5 leading-tight text-justify sm:text-lg">
+                Хочу выразить огромную благодарность ребятам из
+                #волшебныйВьетнам! Всё было организовано на высшем уровне!
+                Общительные, приятные, показали самые секретные места! Теперь
+                буду обращаться только к ним во Вьетнаме!
+              </div>
+            </div>
           </div>
 
-          <div class="w-8/12" >
-          <div class="text-lg font-bold pl-2.5 text-lime-700 font-light mini:text-sm">Алиса Аммерман</div>
-          <div class="text-lg pl-2.5 pt-2.5 leading-tight text-justify mini:text-xs">
-              Хочу выразить огромную благодарность ребятам из #волшебныйВьетнам!
-              Всё было организовано на высшем уровне! Общительные, приятные, показали
-              самые секретные места! Теперь буду обращаться только к ним во Вьетнаме!
-          </div>
-          </div>
-      </div>
+          <div class="review bg-slate-50">
+            <div class="w-3/12">
+              <img src="/src/images/image-girl2.png" class="w-4/5 rounded-full"/>
+            </div>
 
-      <div class="review bg-slate-50">
-        <div class="w-3/12">
-          <img src="/src/images/image-girl2.png" class="w-4/5 rounded-full"/> 
-          </div>
-
-          <div class="w-8/12">
-          <div class="text-lg font-bold pl-2.5 text-lime-700 font-light mini:text-sm">Стефания Сафонова</div>
-          <div class="text-lg pl-2.5 pt-2.5 leading-tight text-justify mini:text-xs">
-              Благодарю ребят за шикарно организованный медовый месяц! Это был
-              самый лучший и незабываемый отдых, о котором я даже и мечтать не могла!
-              Мальвина и Сергей продумали всё от мелочей и даже больше!!
-          </div>
-          </div>
-      </div>
-
-      <div class="review bg-slate-50">
-        <div class="w-3/12">
-          <img src="/src/images/image-girl3.png" class="w-4/5 rounded-full"/> 
+            <div class="w-8/12">
+              <div class="text-sm font-bold pl-2.5 text-lime-700 font-light sm:text-lg">Стефания Сафонова</div>
+              <div class="text-xs pl-2.5 pt-2.5 leading-tight text-justify sm:text-lg">
+                Благодарю ребят за шикарно организованный медовый месяц! Это был
+                самый лучший и незабываемый отдых, о котором я даже и мечтать не
+                могла! Мальвина и Сергей продумали всё от мелочей и даже
+                больше!!
+              </div>
+            </div>
           </div>
 
-          <div class="w-8/12">
-          <div class="text-lg font-bold pl-2.5 text-lime-700 font-light mini:text-sm">Ксения Бердникова</div>
-          <div class="text-lg pl-2.5 pt-2.5 leading-tight text-justify mini:text-xs">
-              Спасибо большое вам за чёткую организацию, своевременное решение возникших трудностей,
-              за ответы на все наши вопросы (которых было не мало). Вы лучшие!
-              Да, стоимость выше среднего, но, поверьте, это того стоит!!
+          <div class="review bg-slate-50">
+            <div class="w-3/12">
+              <img src="/src/images/image-girl3.png" class="w-4/5 rounded-full"/>
+            </div>
+
+            <div class="w-8/12">
+              <div class="text-sm font-bold pl-2.5 text-lime-700 font-light sm:text-lg">Ксения Бердникова</div>
+              <div class="text-xs pl-2.5 pt-2.5 leading-tight text-justify sm:text-lg">
+                Спасибо большое вам за чёткую организацию, своевременное решение
+                возникших трудностей, за ответы на все наши вопросы (которых
+                было не мало). Вы лучшие! Да, стоимость выше среднего, но,
+                поверьте, это того стоит!!
+              </div>
+            </div>
           </div>
-          </div>
-      </div>
-
-  </div>
-
-       
-    </div>
-  </div>
-    <div class="footer text-white">
-
-    <div class="flex mx-auto max-w-screen-lg pt-22">
-
-      <div class="w-3/6 mt-24 mb-24 font-main lg:ml-12 md:ml-16 sm:ml-20 mini:ml-10">
-
-        <div class="text-3xl font-accent mini:text-xs">#волшебныйВьетнам</div>
-
-        <div class="mt-10 text-lg mini:text-xs">
-
-        <div>О НАС</div>
-
-        <div>ЭКСКУРСИИ</div>
-
-        <div>ОТЗЫВЫ</div>
-      </div>
-      </div>
-
-      <div class="w-3/6 text-end mt-24 ml-auto lg:mr-12 md:mr-16 sm:mr-20 mini:mr-10">
-        <p class="text-xl mini:text-xs">info@mail.com</p>
-        <p class="text-xl mini:text-xs">+7-999-123-45-67</p>
-        
-       <img src="/src/images/icon-email.png" class="w-14 float-right pl-2.5"/>    
-        <img src="/src/images/icon-telegram.png" class="w-14 float-right pl-2.5"/> 
-      
         </div>
-    </div>
-    </div>
-  </div>
+      </div>
     </div>
 
+    <div class="footer text-white">
+      <div class="flex mx-auto max-w-screen-lg pt-22">
+        <div class="w-3/6 mt-24 mb-24 font-main lg:ml-12 md:ml-16 sm:ml-20 mini:ml-10">
+          <div class="font-accent text-xs sm:text-3xl">#волшебныйВьетнам</div>
+
+          <div class="mt-10 text-xs sm:text-lg">
+            <div>О НАС</div>
+
+            <div>ЭКСКУРСИИ</div>
+
+            <div>ОТЗЫВЫ</div>
+          </div>
+        </div>
+
+        <div class="w-3/6 text-end mt-24 ml-auto lg:mr-12 md:mr-16 sm:mr-20 mini:mr-10">
+          <p class="text-xs sm:text-xl">info@mail.com</p>
+          <p class="text-xs sm:text-xl">+7-999-123-45-67</p>
+
+          <img src="/src/images/icon-email.png" class="w-14 float-right pl-2.5"/>
+          <img src="/src/images/icon-telegram.png" class="w-14 float-right pl-2.5"/>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
